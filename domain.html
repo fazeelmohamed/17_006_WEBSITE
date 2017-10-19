@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+
+Name       : Flash Networks
+   
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+
+
+-->
+<html>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Domain - Flash Networks</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="index.html"><b>Flash Networks</b></a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="domain.html">Domain</a></li>
+				<li><a href="milestones.html">Milestones</a></li>
+				<li><a href="documents.html">Documents</a></li>
+				<li><a href="presentations.html">Presentations</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container">
+		<div class="image-style"><img src="images/domain.jpg" width="970" height="320" alt="" /></div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="page" class="container">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><b>Domain</b></h2>
+				<div class="entry">
+					<p><img src="images/networking.png" width="620" height="300" alt="" /></p>
+					<ul>
+						<font size="5">
+							<li><a href="#survey">Literature Survey</a></li>
+						</font>
+					</ul>
+					<ul>
+						<font size="5">
+							<li><a href="#gap">Research Gap</a></li>
+						</font>
+					</ul>
+					<ul>
+						<font size="5">
+							<li><a href="#problem">Research Problem</a></li>
+						</font>
+					</ul>
+					<ul>
+						<font size="5">
+							<li><a href="#objectives">Research Objectives</a></li>
+						</font>
+					</ul>
+					</br>
+					<a name="survey">
+					<h1>Literature Survey</h1>
+					</a>
+					<ul>
+						<font size="5">
+						<li>Packet losses during transmission</li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>TCP has been deployed in the 1980s. Its congestion control is based on the 
+						fact that packet losses are mainly due to buffer overthrows and it works quite 
+						well in such situations. However, nowadays, many applications use TCP as their 
+						transport protocol and hence pass through wireless links, which become common in 
+						the Internet. Over these links, packet losses are not due anymore only to overthrows 
+						but can also be caused by link errors. TCP, which has no mechanism to distinguish 
+						packet loss causes, reduces its rate at each packet loss. This reduction is not 
+						justified when there is no congestion and the consequence is that the throughput 
+						of TCP over wireless link is lower than what it could be. Research conducted by 
+						Ibtissam El Khayat.</p>
+					</div>
+					<ul>
+						<font size="5">
+						<li>Congestion control in data transmission </li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>TCP (Transmission control protocol) is a reliable, end-to-end transport protocol, 
+						which is widely used for data services and is very efficient for wired networks. However, 
+						experiments and research showed that TCP's congestion control algorithm performs very poorly 
+						over wireless ad hoc networks with degraded throughputs and severe unfairness among flows by Dr. Thomas Kunz.
+						In fact, the simplest way to solve congestion is to employ the principle of packet conversation in which the 
+						sender stops sending a new packet until the previous one is successfully delivered to the receiver. For this 
+						reason, the TCP protocol, one of the core protocols of the Internet protocol suite, employs the concept of 
+						congestion control which dynamically controls the flow of packet inside a network, and prevents network performance 
+						collapse. Research conducted by van Jacobson.
+						</p>
+					</div>
+					<ul>
+						<font size="5">
+						<li> Error control </li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>This paper we propose a new scheme that can efficiently deliver multimedia over wireless 
+						Internet. Packet losses due to congestion or random error can be distinguished in our scheme. 
+						Proper congestion control and error control are performed, which are suited for multimedia 
+						applications. Featured with retransmission mechanism, our scheme can also reduce the packet 
+						loss ratio caused by fading and random errors, conducted by Fan Yang.
+						</p>
+					</div>
+					<ul>
+						<font size="5">
+						<li> Improve wireless TCP performance  </li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>This paper, they describe the design and implementation of a simple protocol to alleviate 
+						this degradation and present the results of several experiments using this protocol. Their aim 
+						is to improve the end-to-end performance on networks with wireless links without changing 
+						existing TCP implementations at hosts in the fixed network and without recompiling or relinking 
+						existing applications. They achieve this by a simple set of modifications to the network-layer 
+						(IP) software at the base station. These modifications consist mainly of caching packets and 
+						performing local retransmissions across the wireless link by monitoring the acknowledgments to 
+						TCP packets generated by the receiver. Their experiments show speedups of up to 20 times over 
+						regular TCP in the presence of bit errors on the wireless link. They have also found that their 
+						protocol is significantly more robust at dealing with multiple packet losses in a single window 
+						as compared to regular TCP. Conducted by Hari Balakrishnan.
+						This paper makes two important contributions. First, they design a network-based solution called
+						the Window Regulator that maximizes TCP performance for any given buffer size at the congested router. 
+						Second, they present a scheduling and buffer sharing algorithm that reduces the latency for short flows 
+						while exploiting user diversity, thus allowing the wireless channel to be utilized efficiently.
+						This research, explore a new way to make TCP adapt to frequent route changes without relying on 
+						feedback from the network. It is based on TCP detecting out-of-order delivery events and inferring route 
+						changes from these events. They call it Detection of Out-of-Order and Response (DOOR). Their study has 
+						shown that this approach can significantly improve TCP performance over mobile ad-hoc networks.
+						</p>						
+					</div>
+					<ul>
+						<font size="5">
+						<li> Flow Control </li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>The performance of TCP degrades over wireless links due to high rate of data losses, which are falsely 
+						perceived as network congestion state. TCP performance metrics also diminish due to low data rate, since large 
+						delays may occur in last link i.e. wireless link. Similarly in heterogeneous wireless network, packet loss may 
+						also occur due to mobility-events that can cause burst-losses, service-disconnection. This motivates to 
+						reevaluate TCP control operations and embed some mobility related services to optimize its performance 
+						for new generation of wireless networks. TCP for mobile, wireless environment with the help of link-layer 
+						triggers which shall be standardized by IEEE 802.21 standard, through its media independent handover (MIH) 
+						services. These services are used to detect link layer events in the TCP control operations, and act accordingly 
+						to adjust flow and congestion control in a way that does not seriously hamper TCP performance by Muhammad Saeed Akbar.
+						</p>
+					</div>
+					<ul>
+						<font size="5">
+						<li> Performance Enhancement of TCP </li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>Nodes in are distributed and can be statics or mobile. The main advantage of Ad-hoc 
+						Networks is that its nodes can be self-organize allowing nodes to connect to each other. 
+						The connections between the nodes do not need to establish preexisting infrastructure like 
+						other networks. Each node can work as a router to route data to its neighbor nodes. Ad – hoc 
+						networks can be used in places that can be difficult to prepare it with infrastructures like 
+						open areas.						
+						</p>
+					</div>
+					<ul>
+						<font size="5">
+						<li> Improving Transport Layer Performance in Multihop Ad Hoc Networks </li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>TCP congestion control has an implicit assumption, i.e., any packet loss is due to 
+						network congestion. However, this assumption is no longer valid in the ad hoc networks 
+						as packet losses may well be due to channel errors, medium contention, and route failures. 
+						Several works have pointed out that greedy TCP can result in severe congestion in ad hoc 
+						networks and hence performance degradation. Subsequently the TCP source will reduce congestion 
+						window size before it becomes excessively large. To avoid congestion, Chen et al. dynamically 
+						adjusted the congestion window limit according to path length of TCP flows, a neighborhood RED 
+						scheme was proposed to alleviate TCP fairness problem by adjusting marking/dropping probability 
+						in light of observed channel information.						
+						</p>
+					</div>
+					<a name="gap">
+						<h1>Research Gap</h1>
+					</a>
+					<div class="para">
+						<p>These existing Transport Layer Protocols (TLP’s); mainly TCP since it has a high rate of 
+						data packet loss and high retransmission time when operating in wireless networks.
+						There are various additions and enhancements of both TCP and UDP, such as Multipath TCP, 
+						Datacenter TCP or UDP-Lite. These protocols are often designed for a specific use case or 
+						mitigate a common drawback of the original transport protocol. TCP does more than just break 
+						things up into packets. It also makes sure that the data arrives, resending packets where 
+						necessary. But for a question that fits in a single packet, we don't need all the complexity 
+						of TCP to do this. There’s always a demand for reliable information that is accessible in 
+						quick successions without having to wait for long. A second delay can cause a lot of damage 
+						in a real time.
+						All new TCP-like protocols are only modification of basic TCP - Protocols. In them there are 
+						no essential changes. The behavior of these new Protocols is more or less good, but all of them 
+						have not only advantages but also lacks. Process of replacement is very slow and should be very 
+						long.
+						We identify the current protocols that are being used in TLP has certain faults/ draw backs that 
+						prevents the quick succession of transfer of data or retransmit to serve information to its uses.
+						There’s always a demand for reliable information that is accessible in quick successions without
+						having to wait for long. A second delay can cause a lot of damage in a real time system.
+						In our proposed system we focus to develop a protocol that support minimal packet drops and 
+						takes a low retransmission to transmit data in quick successions with in a wireless environment.
+						This has been identified as a very important factor in real time systems which are focusing on 
+						path navigation applications and other related areas which gather information on critical 
+						information like patients, avoid accidents for disabled while providing alternate routes in 
+						navigation systems in instances of impediments.						
+						</p>
+					</div>
+					<a name="problem">
+						<h1>Research Problem</h1>
+					</a>
+					<div class="para">
+						<p>Modern world revolves around networks which have access to details, information any corner 
+						in world and can be accessible fast. We often use this information to ease our day to day 
+						activities be updated with new things, be connected to people around the world and many more.						
+						We have evolved from using information for the purpose of simple activities to real time quick 
+						updates for the purpose of medical reasons, navigation, bank transactions, aviation industry etc. 
+						We find it’s very important to focus on transport layer protocols which possess reliable, 
+						high speed and efficient data transfer methods which are vital factors in real time path 
+						navigation systems which requires information within a short time duration to discover paths, 
+						avoid hazardous encounters providing alternatives.					
+						</p>
+					</div>
+					<a name="objectives">
+						<h1>Research Objectives</h1>
+					</a>
+					<ul>
+						<font size="5">
+						<li>Main Objective</li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>To design an enhanced dynamic transport layer protocol which adapts itself according to the data 
+						that’s being transmitted across a network. For an example if there’s any urgent data that needs to be 
+						transmitted immediately, a different approach will be used rather than using the conventional transport 
+						layer protocol, TCP, which is proven to be inefficient in such situations.</p>
+					</div>
+					<ul>
+						<font size="5">
+						<li>Sub Objectives</li>
+						</font>
+					</ul>
+					<div class="para">
+						<p>
+							<ul>
+								<font size="3">
+									<li>Analysis & classification of application layer data in order to determine which method/functionality 
+										to be used in transmitting those data.</li>
+								</font>
+							</ul>
+							<ul>
+								<font size="3">
+									<li>Examining the currently available transport layer protocols & analyzing their behavior to identify 
+										their drawbacks.</li>
+								</font>
+							</ul>
+							<ul>
+								<font size="3">
+									<li>Handover method analysis to significantly improve the connection establishment process & to reduce 
+										the no of times a particular client has to establish a connection.</li>
+								</font>
+							</ul>
+							<ul>
+								<font size="3">
+									<li>Analyzing the modifications that can be applied to the currently available protocols.</li>
+								</font>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--<div class="post">
+				<h2 class="title"><a href="#">Metus aliquam pellentesque</a></h2>
+				<div class="entry">
+					<p><img src="images/img06.jpg" width="620" height="200" alt="" /></p>
+					<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer nisl felis ac diam. Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis,  egestas at sem.  Mauris quam enim,  in, rhoncus ut, lobortis a, est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc, ut consectetuer. </p>
+				</div>
+			</div> -->
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<div id="box1">
+				<h2><b>Technologies</b></h2>
+				<ul class="list-style1">
+					<li class="first"><a href="https://en.wikipedia.org/wiki/Linux">Linux</a></li>
+					<li><a href="http://www.isi.edu/nsnam/ns/">NS-2</a></li>
+					<li><a href="https://www.nsnam.org/">NS-3</a></li>
+					<li><a href="https://www.wireshark.org/">Wireshark</a></li>
+				</ul>
+			</div>
+			<!--<div>
+				<h2>Nulla luctus eleifend</h2>
+				<ul class="list-style1">
+					<li class="first"><a href="#">Aliquam libero</a></li>
+					<li><a href="#">Consectetuer adipiscing elit</a></li>
+					<li><a href="#">Metus aliquam pellentesque</a></li>
+					<li><a href="#">Suspendisse iaculis mauris</a></li>
+					<li><a href="#">Urnanet non molestie semper</a></li>
+					<li><a href="#">Proin gravida orci porttitor</a></li>
+				</ul>
+			</div> -->
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page --> 
+</div>
+<!--<div id="footer-content" class="container">
+	<div id="footer-bg">
+		<div id="column1">
+			<h2>Welcome to my website</h2>
+			<p>In posuere eleifend odio quisque semper augue mattis wisi maecenas ligula. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus.<br />
+			</p>
+		</div>
+		<div id="column2">
+			<h2>Etiam rhoncus volutpat</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="#">Pellentesque quis elit non lectus gravida blandit.</a></li>
+				<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+				<li><a href="#">Phasellus nec erat sit amet nibh pellentesque congue.</a></li>
+				<li><a href="#">Cras vitae metus aliquam risus pellentesque pharetra.</a></li>
+				<li><a href="#">Maecenas vitae orci vitae tellus feugiat eleifend.</a></li>
+			</ul>
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul class="list-style2">
+				<li class="first"><a href="#">Pellentesque quis elit non lectus gravida blandit.</a></li>
+				<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+				<li><a href="#">Phasellus nec erat sit amet nibh pellentesque congue.</a></li>
+				<li><a href="#">Cras vitae metus aliquam risus pellentesque pharetra.</a></li>
+				<li><a href="#">Maecenas vitae orci vitae tellus feugiat eleifend.</a></li>
+			</ul>
+		</div>
+	</div>
+</div> -->
+<div id="footer">
+	<p>Copyright © 2015  <a href="http://www.sliit.lk">Sri Lanka Institute of Information Technology - SLIIT | Final year Project : 15-019</a>
+</div>
+<!-- end #footer -->
+</body>
+</html>
